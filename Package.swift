@@ -12,11 +12,13 @@ let package = Package(
         ),
     ],
     dependencies: [
+        
     ],
     targets: [
         .target(
             name: "ExamplePackage",
-            dependencies: []
+            dependencies: [],
+            exclude: ["Example"]
         ),
         .testTarget(
             name: "ExamplePackageTests",
